@@ -20,7 +20,7 @@ public class LinodeDetailsExceptionHandler {
 	@ExceptionHandler(DuplicateException.class)
 	public ResponseEntity<Object> handleLinodeDetailsNotInserted(DuplicateException linodeDetailsException) {
 
-		return new ResponseEntity<Object>(new ErrorResponse("422", linodeDetailsException.getMessage()),
+		return new ResponseEntity<Object>(new ErrorResponse("409", linodeDetailsException.getMessage()),
 				HttpStatus.UNPROCESSABLE_ENTITY);
 	}
 
