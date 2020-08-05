@@ -9,7 +9,7 @@ import com.node.entity.Linode;
 
 public interface Linoderepo extends JpaRepository<Linode,Long >{
 
-	@Query(value="select * from Linode",nativeQuery =true)
+	@Query(value="select * from linode_details",nativeQuery =true)
 	List<Linode>getAllInsces();
 	
 
