@@ -32,7 +32,7 @@ public class LinodeServiceImpl implements Linodeservice {
 	 * @param linodeDetailsResponse transaction type
 	 * @return
 	 * @throws LinodeDetailsException
-	 * @throws DataNotInsertedException
+	 * @throws DuplicateException
 	 */
 
 	@Override
@@ -109,7 +109,6 @@ public class LinodeServiceImpl implements Linodeservice {
 	 * @param linodeDetailsResponse
 	 * @return
 	 * @throws LinodeDetailsException
-	 * @throws DataNotInsertedException
 	 */
 
 	@Override
@@ -131,7 +130,6 @@ public class LinodeServiceImpl implements Linodeservice {
 	 * @param linodeDetailsResponse
 	 * @return
 	 * @throws LinodeDetailsException
-	 * @throws DataNotInsertedException
 	 */
 
 	@Override
